@@ -4,6 +4,18 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+pydantic = "*"
+uvicorn = "*"
+sqlalchemy = "*"
+alembic = "*"
+faker = "*"
+passlib = {extras = ["bcrypt"], version = "*"}
+fastapi = {extras = ["all"], version = "*"}
+pyjwt = "*"
+python-decouple = "*"
+marshmallow = "*"
+webargs = "*"
+databases = "*"
 
 [dev-packages]
 
