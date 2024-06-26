@@ -5,7 +5,7 @@ import Img3 from '../../assets/patch.jpg';
 import Img4 from '../../assets/african.jpg';
 import Img5 from '../../assets/pants.jpg';
 import { FaStar } from 'react-icons/fa';
-
+import { Link } from 'react-router-dom';
 
 const ProductsData = [
   {
@@ -95,9 +95,10 @@ const TopRated = () => {
         </div>
         {/* view all button */}
         <div className="flex justify-center">
-          <button className="text-center mt-10 cursor-pointer bg-green-500 text-white py-1 px-5 rounded-md hover:bg-green-700 transition duration-300">
-            View All Button
+          <Link to={'/products'}><button className="text-center mt-10 cursor-pointer bg-green-500 text-white py-2 px-5 rounded-md hover:bg-green-800 transition duration-300">
+            View Products
           </button>
+          </Link>
         </div>
       </div>
     </div>
